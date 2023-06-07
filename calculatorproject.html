@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CALCULATOR PROJECT</title>
+    <style>
+        #display:hover{
+            background-color: aquamarine;
+        }
+        .b:active{
+            background-color: rgb(89, 106, 122);
+        
+        }
+        fieldset{
+            background-color: lightslategray;
+            position: relative;
+            top: 80px;
+        }
+
+
+    </style>
+</head>
+
+<body style="background-color: black;">
+    <center>
+    <form id=calsi>
+    <fieldset style="width: 12%;border-color: white; border-radius: 10px;">
+    <legend style="text-align: center;color: white;">CALCULATOR</legend>
+    <input id="display" style="outline: noone;text-align:right;">
+    <br>
+    <br>
+    <input style="background-color:limegreen;" class="b" type="button" value="AC" onclick="calsi.display.value=''">
+    <input style="background-color:rgb(126, 126, 153);" class="b" type="button" value="C" onclick="calsi.display.value=calsi.display.value.substr(0,calsi.display.value.length-1)">
+    <input style="background-color:rgb(180, 152, 166);" class="b" type="button" value="%" onclick="calsi.display.value+='%'">
+    <input style="background-color:rgb(189, 202, 177);" class="b" type="button" value="+" onclick="calsi.display.value+='+'">
+    <br>
+    <br>
+    <input class="b" type="button" value="1" onclick="calsi.display.value+='1'">
+    <input class="b" type="button" value="2" onclick="calsi.display.value+='2'">
+    <input class="b" type="button" value="3" onclick="calsi.display.value+='3'">
+    <input style="background-color:rgb(161, 197, 43);" class="b" type="button" value="-" onclick="calsi.display.value+='-'">
+    <br>
+    <br>
+    <input class="b" type="button" value="4" onclick="calsi.display.value+='4'">
+    <input class="b" type="button" value="5" onclick="calsi.display.value+='5'">
+    <input class="b" type="button" value="6" onclick="calsi.display.value+='6'">
+    <input style="background-color:rgb(162, 192, 167);" class="b" type="button" value="*" onclick="calsi.display.value+='*'">
+    <br>
+    <br>
+    <input class="b" type="button" value="7" onclick="calsi.display.value+='7'">
+    <input class="b" type="button" value="8" onclick="calsi.display.value+='8'">
+    <input class="b" type="button" value="9" onclick="calsi.display.value+='9'">
+    <input style="background-color:rgb(198, 167, 165);" class="b" type="button" value="/" onclick="calsi.display.value+='/'">
+    <br>
+    <br>
+    <input style="background-color:rgb(74, 112, 75);" class="b" type="button" value="," onclick="calsi.display.value+=','">
+    <input style="background-color:rgb(197, 179, 149);" class="b" type="button" value="0" onclick="calsi.display.value+='0'">
+    <input style="background-color: rgb(95, 63, 60);" class="b" type="button" value="." onclick="calsi.display.value+='.'">
+    <input style="background-color:rgb(112, 99, 123);" class="b" type="button" value="=" onclick="calsi.display.value=eval(calsi.display.value)">
+
+
+</fieldset>
+</form>
+</center>
+</body>
+</html>
